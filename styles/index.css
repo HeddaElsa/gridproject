@@ -10,7 +10,8 @@
 .grid__container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
     grid-gap: 20px;
     height: 100%;
     width: 100%;
@@ -19,6 +20,72 @@
 }
 
 .grid__element--first {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: #007F5F;
+}
+
+.grid__element--second {
+    grid-row: 4 / 7;
+    grid-column: 1 / 2;
+    background-color: #2B9348;
+}
+
+.grid__element--third {
+    grid-row: 1 / 7;
+    grid-column: 2 / 4;
+    background-color: #80B918;
+}
+
+.grid__element--fourth {
+    grid-row: 1 / 3;
+    grid-column: 4 / 6;
+    background-color: #DDDF00;
+}
+
+.grid__element--fifth {
+    grid-row: 3 / 5;
+    grid-column: 4 / 6;
+    background-color: #EEEF20;
+}
+
+.grid__element--sixth {
+    grid-row: 5 / 7;
+    grid-column: 4 / 6;
+    background-color: #FFFF3F;
+}
+
+.grid__element--seventh {
+    grid-row: 7 / 9;
+    grid-column: 1 / 2;
+    background-color: #55A630;
+}
+
+.grid__element--eighth {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    background-color: #AACC00;
+}
+
+.grid__element--nineth {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3;
+    background-color: #BFD200;
+}
+
+.grid__element--tenth {
+    grid-row: 7 / 9;
+    grid-column: 3 / 5;
+    background-color: #D4D700;
+}
+
+.grid__element--eleventh {
+    grid-row: 7 / 9;
+    grid-column: 5 / 6;
+    background-color: #007F5F;
+}
+
+/* .grid__element--first {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     background-color: #007F5F;
@@ -82,16 +149,21 @@
     grid-row: 4 / 6;
     grid-column: 5 / 6;
     background-color: #007F5F;
-}
+} */
 
 .mycolourpalette {
     background-color: #9BC1BC;
     font-size: 64px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
+    font-weight: 600;
     width: 100%;
     height: 146px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.mycolourpalette h1 {
+    margin-left: 20px;
 }
