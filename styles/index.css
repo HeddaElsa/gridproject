@@ -1,0 +1,82 @@
+.screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.grid__element--first {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #007F5F;
+}
+
+.grid__element--second {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    background-color: #2B9348;
+}
+
+.grid__element--third {
+    grid-row: 1 / 4;
+    grid-column: 2 / 4;
+    background-color: #80B918;
+}
+
+.grid__element--fourth {
+    grid-row: 1 / 2;
+    grid-column: 4 / 6;
+    background-color: #DDDF00;
+}
+
+.grid__element--fifth {
+    grid-row: 2 / 3;
+    grid-column: 4 / 6;
+    background-color: #EEEF20;
+}
+
+.grid__element--sixth {
+    grid-row: 3 / 4;
+    grid-column: 4 / 6;
+    background-color: #FFFF3F;
+}
+
+.grid__element--seventh {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+    background-color: #55A630;
+}
+
+.grid__element--eighth {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    background-color: #AACC00;
+}
+
+.grid__element--nineth {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-color: #BFD200;
+}
+
+.grid__element--tenth {
+    grid-row: 4 / 6;
+    grid-column: 3 / 5;
+    background-color: #D4D700;
+}
+
+.grid__element--eleventh {
+    grid-row: 4 / 6;
+    grid-column: 5 / 6;
+    background-color: #007F5F;
+}
